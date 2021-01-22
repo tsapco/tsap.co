@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Jura", Arial;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background: #C9C9C3;
+}
+
+.nav-container a {
+  color: #444444;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+header .logo {
+  color: #FCB6C6, 100%;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.social-header, .hero-design {
+  display: none;
+}
+
+.hero {
+  background: #C9C9C3;
+  color: #444444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 2e;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 3em;
+  margin: 0 auto;
+  width: 200px;
+  font-weight: bold;
+  color: #444444;
+}
+
+section {
+  padding: 4em 2em;
+}
+
+.featured {
+  position: relative;
+}
+
+.featured::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #C9C9C3;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #444444;
+  letter-spacing: 0.2em;
+  font-size: 1em;
+}
+
+.showreel-desc {
+  color: #444444;
+  margin-bottom: 3em;
+  font-size: 0.7em;
+}
+
+@media only screen and (min-width: 800px) {
+  .featured {
+    text-align: left;
+  }
+  .social-header {
+    display: block;
+  }
+  .social-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 10em;
+    flow: right;
+  }
+  .social-header ul img {
+    width: 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
